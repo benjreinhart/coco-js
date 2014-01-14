@@ -1,6 +1,6 @@
 {
     "name": "coco-js"
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "description": "Add CoffeeScript prototype alias operator to JavaScript"
   , "author": "benjreinhart"
   , "engines":
