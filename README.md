@@ -34,6 +34,13 @@ Array::[prop].call("string")
   'g'
 ]
 */
+
+var isString = function (obj) {
+  return Object::toString.call(obj) === '[object String]'
+}
+
+isString('string') // true
+isString([]) // false
 ```
 
 ## Tests

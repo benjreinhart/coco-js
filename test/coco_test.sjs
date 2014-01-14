@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-describe('in-js', function(){
+describe('coco-js', function(){
   it('properly aliases the prototype with dot notation', function(){
     expect(Array::slice.call("string")).to.eql([
       's',
@@ -22,5 +22,14 @@ describe('in-js', function(){
       'n',
       'g'
     ]);
+  });
+
+  it('works on any lhs value', function(){
+    var isString = function (obj) {
+      return Object::toString.call(obj) === '[object String]'
+    }
+
+    expect(isString("string")).to.be.true
+    expect(isString([])).to.be.false
   });
 });
