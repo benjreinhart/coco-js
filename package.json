@@ -40,4 +40,5 @@
   , "homepage": "https://github.com/benjreinhart/coco-js"
 
   , "license": "MIT"
+  , "index": "src/coco.sjs"
 }
