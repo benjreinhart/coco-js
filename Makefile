@@ -1,5 +1,5 @@
 BIN = node_modules/.bin
-SRCDIR = ./src
+SRCDIR = ./macro
 TESTDIR = ./test
 
 MOCHA = $(BIN)/mocha
@@ -11,4 +11,4 @@ test: build-test
 	@$(MOCHA) --reporter spec --recursive --colors
 
 build-test:
-	@$(SJS) --module $(SRCDIR)/coco.js $(TESTDIR)/coco_test.sjs -o $(TESTDIR)/coco_test.js
+	@$(SJS) --module $(SRCDIR)/coco.sjs $(TESTDIR)/coco_test.sjs -o $(TESTDIR)/coco_test.js
