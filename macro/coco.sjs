@@ -12,3 +12,17 @@ macro :: {
 }
 
 export ::;
+
+macro @ { 
+  rule {
+    $x:ident
+  } => {
+    this.$x
+  }
+  rule {
+  } => {
+    this
+  }
+}
+
+export @;
